@@ -1,0 +1,25 @@
+# python_9
+number = int(input("εισαγετε αριθμο: "))
+S = 0
+
+n = n * 3 + 1
+while n > 9:
+        S = n // 10 + n % 10
+        n = S
+        print(n)
+        if len(str(n)) == 2:
+            S = n % 10 + n // 10
+            n = S
+            print(n)
+        if len(str(n)) == 3:
+            ek = n // 100
+            yp = n % 100
+            dek = yp // 10
+    
+            mon = yp % 10
+            S = ek + dek + mon
+            n = S
+            print(n)
+            
+
+print("Τελικος αριθμος: ", number)
