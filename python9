@@ -1,25 +1,21 @@
 # python_9
 n = int(input("εισαγετε αριθμο: "))
-
-while n > 9:
-        print(n)
-        n = n*3 + 1
-        S = 0
-        n1 = n
-        
-        
-        while n1 > 9:
+n = n*3 + 1
+S = 0
+n1 = n   
+while n1 > 9:
                 psifio = n1 % 10
                 n1 = n1 // 10
                 S = psifio + S
                 n = S
+                print(n)
+                
         
                 if n1 <= 9:
                         S = S + n1
                         n = S
 
 
-                
-    
 
-print("Τελικος αριθμος: ", n)
+
+print("Συνολο ψηφιων: ", n)
